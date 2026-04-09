@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hi</title>
+        <style>
+            body.dark{
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>the basemant story</h1>
+        <P id="story">I want to go to the aplashin mountain to find out if the storys about skinwalkers are true</P>
+        <button onclick="godark()">
+            get in the mood
+        </button>
+        <div class="textentry">
+            type your name here if you dare:<input type="text" id="name">
+        </div>
+        <button onclick="scream()">
+            please don't click me
+        </button>
+        <button onclick="final()">
+            tell me what happend
+        </button>
+        <script>
+            function godark(){
+                document.body.className="dark"
+            }
+            function scream(){
+                var name=document.getElementById("name").value
+                alert("i told you not to enter"+name)
+            }
+            function final(){
+                document.getElementById("story").innerHTML="so be careful when you are searching foe the skinwalkers"
+            }
+        </script>
+    </body>
+</html>
